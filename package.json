@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner",
+    "sonar": "node sonar-project.js"
   },
   "author": "Kunal Verma",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^3.0.1",
+    "sonarqube-scanner": "^2.9.1"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
