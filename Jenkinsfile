@@ -13,6 +13,12 @@ node
                        sh "npm publish"
          }
 }
+  stage ('docker'){
+         sh ''' docker build -t node:js .
+                docker run -dp 80:80 node:js '''
+
+        
+  }
 }
 
 
